@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página">
+    <title>Gestión de Registros</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="div-container">
+        <div class="div-form">
+            <form>
+                <div class="div-header-form">
+                    <h4>Por favor diligencia toda la información</h4>
+                </div>
+                <div class="div-first-data">
+                    <input class="input" type="text" name="key" id="key">
+                    <div class="group-input">
+                        <select class="input" name="typeid" id="typeid">
+                            <option disabled selected>Tipo de identificación</option>
+                            <option>CC</option>
+                            <option>CE</option>
+                            <option>TI</option>
+                        </select>
+                        <input class="input" type="number" name="id" id="id" required
+                            placeholder="Identificación">
+                    </div>
+                    <input class="input" type="text" name="lastname1" id="lastname1" required placeholder="Primer apellido">
+                    <input class="input" type="text" name="lastname2" id="lastname2" required placeholder="Segundo apellido">
+                    <input class="input" type="text" name="name1" id="name1" required placeholder="Primer nombre">
+                    <input class="input" type="text" name="name2" id="name2" required placeholder="Segundo nombre">
+                    <div class="div-genero">
+                        <select class="input" name="sexo" id="sexo">
+                            <option disabled selected>Genero</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <label for="date">Fecha de nacimiento: </label>
+                        <input class="input" type="date" name="date" id="date" required placeholder="Fecha de nacimiento">
+                    </div>
+                    <hr class="hr">
+                </div>
+                <div class="group-button">
+                    <div class="div-btn div-btn-prev">
+                        <input type="button" id="btnReset" class="btn-prev" value="Restablecer">
+                        <input class="btn-next" type="submit" value="Registrar" id="btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="div-image">
+            <div class="container">
+                <hr class="hr">
+            </div>
+        </div>
+    </div>
+
+    <script type="module"  src="js/indexDB.js"></script>
+</body>
+</html>
