@@ -21,8 +21,9 @@ docker network create dev-red
 
 Clona el repositorio:
 ```sh
-git clone https://github.com/ajmaestre/devapp.git
-cd devapp
+git clone https://github.com/orenarounicesar/devops202501-html.git
+cd devops202501-html
+
 ```
 
 ---
@@ -32,6 +33,7 @@ cd devapp
 2️⃣ Construye la imagen:
 ```sh
 docker build . -t devapp
+
 ```
 
 ---
@@ -50,6 +52,7 @@ docker run -d --name dev-app --network=dev-red -p 3000:3000 devapp
 
 ```sh
 docker ps
+
 ```
 
 Si todo está bien, verás los contenedores `dev-app` en ejecución.
