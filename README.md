@@ -1,5 +1,3 @@
-# devops202501-html
-
 # 📌 Configuración del Proyecto con Docker
 
 Este documento proporciona las instrucciones detalladas para:
@@ -56,5 +54,13 @@ docker ps
 
 Si todo está bien, verás los contenedores `dev-app` en ejecución.
 
+
+---
+
+## 📝 6. Verificación en el Navegador
+
+```sh
+http://localhost:3000
+```
 
 ---
